@@ -13,7 +13,7 @@
 
 ### **Overview**
 ---
-<img src="ReadMe/winebanner.png" width="100%">
+<img src="photos/winebanner.png" width="100%">
 WineByMe is an application for wine enthusiasts. You can sign up, log in, and browse many wines by classification. You can create your own “wineNight” to store the wines of interest. 
 
 This group project was built with GA classmates [Ivan Craig](https://github.com/ic188002) & [Rob Sesemann](https://github.com/Rob-Sesemann).
@@ -62,18 +62,18 @@ To explore the full features Forage has to offer,  feel free to log in using the
 
 Main Index – list of wine classification, which can be filtered by red & white
 
-<img src="ReadMe/mainindex.png" width="100%">
+<img src="photos/mainindex.png" width="100%">
 
 Users can click on a wine classification and see the wine available.  They can click on a particular wine.  If they have a “wineNight’ created, they can select to add it to one of them. 
-<img src="ReadMe/webwinelist.png" width="100%">
+<img src="photos/webwinelist.png" width="100%">
 
 If users have yet to create a wineNight, they can create one. All ‘wineNights’ created will display on a user's favourite Wine List. 
 
-<img src="ReadMe/createwinenight.png" width="45%"> <img src="ReadMe/favouritelist.png" width="45%">
+<img src="photos/createwinenight.png" width="45%"> <img src="photos/favouritelist.png" width="45%">
 
 Their user can view and remove wines from a “wineNight”, edit the “wineNight”, or delete it entirely.
 
-<img src="ReadMe/favouritelist2.png" width="100%">
+<img src="photos/favouritelist2.png" width="100%">
 
 **Functionality** 
 
@@ -91,7 +91,7 @@ The idea for WineByMe came from our team leader Ivan; ahead of the project, he h
 
 Once we got to grips with what the spooncular API had to offer, we sketched out our initial ERD to map out the relationship between our models: 
 
-<img src="ReadMe/wineerd.png" width=100%>
+<img src="photos/wineerd.png" width=100%>
 
 
 We established for our application it would be best for: 
@@ -101,14 +101,14 @@ We established for our application it would be best for:
 
 We discussed the flow of the app, and Ivan drew up the initial wireframe of the index page. 
 
-<img src="ReadMe/wireframewine.png" width=100%>
+<img src="photos/wireframewine.png" width=100%>
 
 
 Once we had the structure for the site in place, the last task was to divide the workload. It was at this stage that we agreed that we would pair-program. Whilst we were all familiar with the backend development, having used express and MongoDB in project 2, we’d only be working on the React framework for six days; given its complexity, we felt the screen sharing would be the most effective way to consolidate our learning and achieve our goal of producing a well-rounded functioning app.  Therefore “pair-programmed” throughout the whole build process, with two of us working from one laptop (via zoom share screen)  to build each element and the third working on CSS and the design. 
 
 Considering this, Trello was not crucial in keeping track of each of our workloads, but we did use it to keep track of the features we were building.
 
-<img src="ReadMe/trellowine.png" width=100%>
+<img src="photos/trellowine.png" width=100%>
 
 
 Our approach for the week was methodical. We worked on each feature from the backend, first creating the routes and controllers for each as we tackled them. We’d then test the API worked with the postman and then move forward to integrating the API in the front-end. The flow of the work week for the build was as follows: 
@@ -125,7 +125,7 @@ Our approach for the week was methodical. We worked on each feature from the bac
 
 The wine index was a crucial part of the site as the ‘’on-click” of each wine classification would take you to a wine list rendered by the spooncular API. The API we worked with took two parameters, the wine classification, i.e., chardonnay and the number of wines we wanted to render  
 
-<img src="ReadMe/axioscode.png" width=100%>
+<img src="photos/axioscode.png" width=100%>
 
 We started by hardcoding each wine classification into the API, and from this, we successfully rendered the index page (as it looks now). However, the code was repetitive and not in line with React's best practices by having one component that could be rendered multiple times. We knew we had to refactor our code to be more dynamic. 
 
@@ -134,32 +134,32 @@ The visual from the index helped to break down the requirements:  We could see w
 
 1. A data set to loop through, created within our application based on the spooncular classification list 
 
-<img src="ReadMe/datawine.png" width=100%>
+<img src="photos/datawine.png" width=100%>
 
 2. “wineIndex” component – where we pass through the wine classification data as a prop (wineCategories) 
-<img src="ReadMe/wineindexcode.png" width=100%>
+<img src="photos/wineindexcode.png" width=100%>
 
 3. “wineCard’ component
 
 Within the wineIndex.js, we’d map over the wine classification data and return a wine card for each category listed in the data, which is then displayed. 
 
-<img src="ReadMe/winecardcode.png" width=100%>
+<img src="photos/winecardcode.png" width=100%>
 
 Now we had a dryer and more dynamic code; it was time to make sure that ‘on-click’ a list of wines for that classification would capture the correct data to display a list of wines. 
 
 This was done within the ‘loadWineIndex’ function as noted below:
 
-<img src="ReadMe/loadwineindex.png" width=100%>
+<img src="photos/loadwineindex.png" width=100%>
 
 The data fetched from the API was passed through  our “WineCategorieslist “component as a prop named “wineList.”
-<img src="ReadMe/winecategories.png" width=100%>
+<img src="photos/winecategories.png" width=100%>
 
  Which is then passed through to the “WineList” component
-<img src="ReadMe/winecatlist.png" width=100%>
+<img src="photos/winecatlist.png" width=100%>
 
 Within the wineList component, the array of wine data fetched from the API (for the classification clicked on the index )  is mapped through to render an individual row for each wine in the array, as shown below for Bordeaux’s
 
-<img src="ReadMe/winelist.png" width=49%> <img src="ReadMe/webview.png" width=45%>
+<img src="photos/winelist.png" width=49%> <img src="photos/webview.png" width=45%>
 
 
 I’ve highlighted this code section as it was pivotal in completing the final product. The process helped us grasp the concept of React. The methodology we used to refactor the code was how we approached the development of the rest of the features. This made the development of the project smoother. 
@@ -192,7 +192,6 @@ Aside from the challenges above, it took some time within React to get the App f
 ---
 
 The key learning I have taken away from Project 4 is simply not to be afraid to code even if I feel the initial approach is “wrong”’. On this project, we got our initial ideas and thought processes down, giving us a visual view of what we wanted to achieve, and making it easier for us to refine. This process allowed me to consolidate my understanding, as each time we made a refinement, I knew why we were making it.  I now truly feel empowered to work through my thought process (even if it takes time) instead of seeking the “DRY” solutions from the offset.  
- 
 
 
 
