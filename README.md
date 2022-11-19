@@ -18,7 +18,7 @@ WineByMe is an application for wine enthusiasts. You can sign up, log in, and br
 
 This group project was built with GA classmates [Ivan Craig](https://github.com/ic188002) & [Rob Sesemann](https://github.com/Rob-Sesemann).
 
-**Code Acces**<br>
+**Code Access**<br>
 The frontend source code on GitHub [here](https://github.com/HelenevB/SEI-project04-wineApp-Frontend)<br>
 The backend source code on GitHub [here](https://github.com/HelenevB/SEI-project04-wineApp-Backend)
 
