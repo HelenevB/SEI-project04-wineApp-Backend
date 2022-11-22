@@ -14,9 +14,8 @@
 ### **Overview**
 ---
 <img src="photos/winebanner.png" width="100%">
-WineByMe is an application for wine enthusiasts. You can sign up, log in, and browse many wines by classification. You can create your own “wineNight” to store the wines of interest.
 
-<br>
+WineByMe is an application for wine enthusiasts. You can sign up, log in, and browse many wines by classification. You can create your own “wineNight” to store the wines of interest.<br>
 
 This group project was built with GA classmates [Ivan Craig](https://github.com/ic188002) & [Rob Sesemann](https://github.com/Rob-Sesemann).
 
