@@ -27,7 +27,7 @@ The back-end source code is on GitHub [here](https://github.com/HelenevB/SEI-pro
 
 The link to the deployed application via Heroku is accessible [here](https://wineappsei66.herokuapp.com/).
 
-To explore the full features WineByMe has to offer,  feel free to log in using the following credentials: 
+To explore the full features WineByMe has to offer, feel free to log in using the following credentials: 
 
 **Username**: demo@email.com <br>
 **Password**: testpassword 
@@ -105,7 +105,7 @@ We discussed the flow of the app, and Ivan drew up the initial wireframe of the 
 
 <img src="photos/wireframewine.png" width=100%>
 
-Once we had the structure for the site in place, the last task was to divide the workload. It was at this stage that we agreed that we would pair-program. Whilst we were all familiar with the backend development, having used Express and MongoDB in project 2, we’d only be working on the React framework for six days; given its complexity, we felt the screen sharing would be the most effective way to consolidate our learning and achieve our goal of producing a well-rounded functioning app. Therefore “pair-programmed” throughout the whole build process, with two of us working from one laptop (via Zoom screen-share)  to build each element and the third working on CSS and the design. 
+Once we had the structure for the site in place, the last task was to divide the workload. It was at this stage that we agreed that we would pair-program. Whilst we were all familiar with the backend development, having used Express and MongoDB in project 2, we’d only be working on the React framework for six days; given its complexity, we felt the screen sharing would be the most effective way to consolidate our learning and achieve our goal of producing a well-rounded functioning app. Therefore “pair-programmed” throughout the whole build process, with two of us working from one laptop (via Zoom screen-share) to build each element and the third working on CSS and the design. 
 
 Considering this, Trello was not crucial in keeping track of each of our workloads, but we did use it to keep track of the features we were building.
 
@@ -169,7 +169,7 @@ Working in such a supportive and collaborative group was the biggest win. The be
 
 Another success for me was feeling more confident with working in the backend. In project 2, I struggled to grasp some of the concepts of relationship data, whereas, for this project, I was able to get the data saved in the right place as intended relatively quickly.
 
-Aside from the challenges above, it took some time within React to get the App flowing smoothly.  When looking to redirect to another component after form submission, I initially tried to use the link, but the data was not saving when I did. Having done some research and found that calling upon the useNavigate Hook did the trick.
+Aside from the challenges above, it took some time within React to get the App flowing smoothly. When looking to redirect to another component after form submission, I initially tried to use the link, but the data was not saving when I did. Having done some research and found that calling upon the useNavigate Hook did the trick.
 
 ### **Known Bugs**
 --- 
