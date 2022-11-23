@@ -129,7 +129,7 @@ The wine index was a crucial part of the site as the ‘’on-click” of each w
 
 We started by hardcoding each wine classification into the API, and from this, we successfully rendered the index page (as it looks now). However, the code was repetitive and not in line with React's best practices by having one component that could be rendered multiple times. We knew we had to refactor our code to be more dynamic. 
 
-The visual from the index helped to break down the requirements: we could see we had one 'div' ("wineIndex") that held multiple "divs`" (one for each wine classification). Therefore, to render correctly, we established we’d need the following:
+The visual from the index helped to break down the requirements: we could see we had one 'div' ("wineIndex") that held multiple "divs" (one for each wine classification). Therefore, to render correctly, we established we’d need the following:
 
 1. A data set to loop through, created within our application based on the Spoonacular API classification list: 
 
