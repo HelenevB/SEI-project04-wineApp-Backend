@@ -15,7 +15,7 @@
 ---
 <img src="photos/winebanner.png" width="100%">
 
-WineByMe is an application for wine enthusiasts. You can sign up, log in, and browse many wines by classification. You can create your own “wineNight” to store the wines of interest.<br>
+WineByMe is an application for wine enthusiasts. You can sign up, log in, and browse many wines by classification. You can create your own “wineNight” to store the wines of interest. <br>
 
 This group project was built with GA classmates [Ivan Craig](https://github.com/ic188002) & [Rob Sesemann](https://github.com/Rob-Sesemann).
 
@@ -52,10 +52,11 @@ To explore the full features WineByMe has to offer,  feel free to log in using t
 * React-Bootstrap 
 * Ajax 
 * CSS 
+* Postman
 
 **Third-Party API’s**
 
-* [Spooncular API](https://spoonacular.com/food-api)
+* [Spoonacular API](https://spoonacular.com/food-api)
 
 
 ### **App Flow**
@@ -65,7 +66,7 @@ Main Index – list of wine classification, which can be filtered by red & white
 
 <img src="photos/mainindex.png" width="100%">
 
-Users can click on a wine classification and see the wine available.  They can click on a particular wine.  If they have a “wineNight’ created, they can select to add it to one of them:
+Users can click on a wine classification and see the wine available.They can click on a particular wine. If they have a “wineNight’ created, they can select to add it to one of them:
 
 <img src="photos/webwinelist.png" width="100%">
 
@@ -86,11 +87,11 @@ If users have yet to create a “wineNight”, they can create one. All ‘wineN
 
 ### **The Planning & Development Process**
 --- 
-The idea for WineByMe came from our team leader Ivan; ahead of the project, he had been exploring possible APIs that could be incorporated into the build, one of which was spooncular API. Whilst the API was predominately offering data for food nutrition, there is a wine section we could use to our advantage.
+The idea for WineByMe came from our team leader Ivan; ahead of the project, he had been exploring possible APIs that could be incorporated into the build, one of which was Spoonacular API. Whilst the API was predominately offering data for food nutrition, there is a wine section we could use to our advantage.
 
 This would have been the first project in which I utilised a third-party API, so I was excited to incorporate this into the development. 
 
-Once we got to grips with what the spooncular API had to offer, we sketched out our initial ERD to map out the relationship between our models: 
+Once we got to grips with what the Spoonacular API had to offer, we sketched out our initial ERD to map out the relationship between our models: 
  
 
 <img src="photos/wineerd.png" width=100%>
@@ -104,7 +105,7 @@ We discussed the flow of the app, and Ivan drew up the initial wireframe of the 
 
 <img src="photos/wireframewine.png" width=100%>
 
-Once we had the structure for the site in place, the last task was to divide the workload. It was at this stage that we agreed that we would pair-program. Whilst we were all familiar with the backend development, having used express and MongoDB in project 2, we’d only be working on the React framework for six days; given its complexity, we felt the screen sharing would be the most effective way to consolidate our learning and achieve our goal of producing a well-rounded functioning app.  Therefore “pair-programmed” throughout the whole build process, with two of us working from one laptop (via zoom screen-share)  to build each element and the third working on CSS and the design. 
+Once we had the structure for the site in place, the last task was to divide the workload. It was at this stage that we agreed that we would pair-program. Whilst we were all familiar with the backend development, having used Express and MongoDB in project 2, we’d only be working on the React framework for six days; given its complexity, we felt the screen sharing would be the most effective way to consolidate our learning and achieve our goal of producing a well-rounded functioning app. Therefore “pair-programmed” throughout the whole build process, with two of us working from one laptop (via Zoom screen-share)  to build each element and the third working on CSS and the design. 
 
 Considering this, Trello was not crucial in keeping track of each of our workloads, but we did use it to keep track of the features we were building.
 
@@ -122,15 +123,15 @@ Our approach for the week was methodical. We first worked on each feature from t
 
 **Featured Code** 
 
-The wine index was a crucial part of the site as the ‘’on-click” of each wine classification would take you to a wine list rendered by the spooncular API. The API we worked with took two parameters, the wine classification, i.e.chardonnay and the number of wines we wanted to render.  
+The wine index was a crucial part of the site as the ‘’on-click” of each wine classification would take you to a wine list rendered by the Spoonacular  API. The API we worked with took two parameters, the wine classification, i.e.chardonnay and the number of wines we wanted to render.  
 
 <img src="photos/axioscode.png" width=100%>
 
 We started by hardcoding each wine classification into the API, and from this, we successfully rendered the index page (as it looks now). However, the code was repetitive and not in line with React's best practices by having one component that could be rendered multiple times. We knew we had to refactor our code to be more dynamic. 
 
-The visual from the index helped to break down the requirements: we could see we had one ‘div” ("wineIndex") that held multiple "divs`" (one for each wine classification). Therefore, to render correctly, we established we’d need the following:
+The visual from the index helped to break down the requirements: we could see we had one 'div' ("wineIndex") that held multiple "divs`" (one for each wine classification). Therefore, to render correctly, we established we’d need the following:
 
-1. A data set to loop through, created within our application based on the spooncular classification list: 
+1. A data set to loop through, created within our application based on the Spoonacular API classification list: 
 
 <img src="photos/datawine.png" width=100%>
 
@@ -175,7 +176,7 @@ Aside from the challenges above, it took some time within React to get the App f
  
 * A new instance of the wine is created in the database every time a user chooses to add it to a wine list 
 * Users who are not logged in still have access to the add-to wineNight functionality 
-* App Messaging; users are currently not being notified if a wine has successfully been added to a “wineNight” 
+* App Messaging; users, are currently not being notified if a wine has successfully been added to a “wineNight” 
 * The user profile section is showing but not complete (this was not a priority)
 
 ### **Future Enhancements**
@@ -187,7 +188,7 @@ Aside from the challenges above, it took some time within React to get the App f
 
 ### **Key Learnings**
 ---
-The key learning I have taken away from Project 4 is simply not to be afraid to code even if I feel the initial approach is not “dry”’. On this project, we got our initial ideas and thought processes down, giving us a visual view of what we wanted to achieve, and making it easier for us to refine. This process allowed me to consolidate my understanding, as each time we made a refinement, I knew why we were making it.  I now truly feel empowered to work through my thought process (even if it takes time) instead of seeking the “dry” solution from the offset.   
+The key learning I have taken away from Project 4 is simply not to be afraid to code even if I feel the initial approach is not “dry”’. On this project, we got our initial ideas and thought processes down, giving us a visual view of what we wanted to achieve, and making it easier for us to refine. This process allowed me to consolidate my understanding, as each time we made a refinement, I knew why we were making it. I now truly feel empowered to work through my thought process (even if it takes time) instead of seeking the “dry” solution from the offset.  
 
 
 
