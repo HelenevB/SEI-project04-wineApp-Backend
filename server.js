@@ -10,12 +10,16 @@ const expressLayouts = require('express-ejs-layouts');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser')
 
+const path = require('path')
+
 // Port Configuration
 const PORT = process.env.PORT;
 
 
 // Initialze Express
 const app = express();
+
+app.use(express.static(path.join(__dirname, 'build')));
 
 const authRouter =  require('./routes/auth')
 const favouriteWineRouter = require('./routes/favouriteWines')
@@ -38,6 +42,9 @@ app.listen(PORT, () => {
     console.log(`Wine is running on port ${PORT}`);
 })
 
+app.get("/*", function(req, res){
+    res.sendFile(path.join(__dirname, 'build', 'index.html'))
+  });
 
 // Database Connection
 mongoose.connect(process.env.MongoDBURL,
