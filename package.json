@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "engines": {
     "node": "16.17.0",
-    "npm:": "8.18.0"
+    "npm": "8.18.0"
   },
   "description": "BackEnd for wine app - some changes made by Rob's dev",
   "main": "index.js",
