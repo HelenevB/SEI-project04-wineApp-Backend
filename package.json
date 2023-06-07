@@ -5,7 +5,7 @@
     "node": "16.17.0"
   },
   "description": "BackEnd for wine app - some changes made by Rob's dev",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "nodemon server",
     "start": "node server.js"
