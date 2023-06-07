@@ -13,7 +13,7 @@ const bodyParser = require('body-parser')
 const path = require('path')
 
 // Port Configuration
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5400 ;
 
 
 // Initialze Express
