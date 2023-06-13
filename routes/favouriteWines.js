@@ -4,7 +4,7 @@ const router = express.Router();
 router.use(methodOverride('_method'))
 // router.use(express.json());
 
-const favouriteWineCtrl = require('../controllers/favouriteWines');
+const favouriteWineCtrl = require('../controllers/favouritewines');
 const isLoggedIn = require('../helper/isLoggedIn');
 
 // Routes
