@@ -6,6 +6,9 @@
   "scripts": {
     "test": "nodemon server"
   },
+  "engines": {
+    "node": "16.17.0"
+  },
   "author": "Rob, Helen, Ivan",
   "license": "ISC",
   "dependencies": {
